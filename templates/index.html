@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+	<head>
+		<title>botShare</title>
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bootstrap.css') }}">
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bootstrap.min.css') }}">
+		<script src="{{ url_for('static', filename='jquery.min.js') }}"></script>
+	</head>
+	<body>
+		<div class="jumbotron col-md-10 col-md-offset-1">
+		  <h1><strong>BOT</strong>SHARE</h1>
+		  <p>This application is based on python - share files accross your network!</p>
+		  <p><a class="btn btn-primary btn-lg" href="http://{{ip}}:{{port}}/files">View files</a></p>
+
+		  <form class="form-horizontal" action="" method="post" enctype=multipart/form-data>
+		  <legend>Select file from system and click upload!</legend>
+		     	<label class="btn btn-primary" for="my-file-selector">
+				    <input id="my-file-selector" name="file" type="file" style="display:none;" onchange="$('#upload-file-info').html($(this).val());">
+				    Select file
+				</label>
+				<span class='label label-info' id="upload-file-info"></span>
+		     	 
+		     	 <label class="btn btn-default btn-file">
+				    Upload <input type=submit style="display: none;">
+				</label>
+		    </form>
+		</div>
+	</body>
+</html>
