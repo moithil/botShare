@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+	<head>
+		<title>botShare</title>
+
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bootstrap.css') }}">
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bootstrap.min.css') }}">
+		<script src="{{ url_for('static', filename='jquery.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='qrcode.js') }}"></script>
+		<script src="{{ url_for('static', filename='qrcode.min.js') }}"></script>
+			
+	</head>
+	<body>
+		<div class="jumbotron col-md-10 col-md-offset-1">
+		  <h1><strong>BOT</strong>SHARE</h1>
+		  <h3>Redirect your devices to this address  <span style="color:green">{{ip}}:{{port}}</span></h3>
+		  <p>This application is based on python - share files accross your network!</p>
+		  
+		  <div>
+			<div id="qrcode"></div>
+			<script type="text/javascript">
+			var qrcode = new QRCode(document.getElementById("qrcode"), {
+			    text: "{{ip}}:{{port}}",
+			    width: 328,
+			    height: 328,
+			    colorDark : "#000000",
+			    colorLight : "#ffffff",
+			    correctLevel : QRCode.CorrectLevel.H
+			});
+			</script>
+		  </div>
+		</div>
+		
+	</body>
+</html>
