@@ -5,7 +5,7 @@ Python application for file sharing in LAN for Linux
 botShare is a simple file sharing application made for linux. The best use of this application is when you have devices conencted to same network and you have to send a file quickly. botShare uses python and flask for all its functionalities.
 
 
-###:package:installation
+###:package: installation
 - Python comes pre-installed in linux machines.
 - Install pip to istall flask.
 - `sudo apt-get install pip`
@@ -15,11 +15,11 @@ botShare is a simple file sharing application made for linux. The best use of th
 
 Thats it!
 
-###:arrows_clockwise:run app.py 
+###:arrows_clockwise: run app.py 
 - `cd <directory>/botShare`
 - `python app.py`
 
-###:blue_book:other libraries used
+###:blue_book: other libraries used
 - Bootstrap
 - qrcodejs
 
