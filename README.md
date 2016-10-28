@@ -17,7 +17,7 @@ Thats it!
 
 ###:arrows_clockwise:run app.py 
 - `cd <directory>/botShare`
-- `python fileserver.py`
+- `python app.py`
 
 ###:blue_book:other libraries used
 - Bootstrap
