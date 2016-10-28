@@ -23,6 +23,10 @@ Thats it!
 - Bootstrap
 - qrcodejs
 
+### :bulb: usage
+After your run the application, your default browser will show the botShare desk(if not, then direct your browser to `http://localhost:<port>/home`. Read the QR code or directly access the address generated from other devices in the same network. Then you can share files from your server to other devices.
+
+
 ```
                      __  __  ______   ____    __  __  ____     _____   ______   
                     /\ \/\ \/\__  _\ /\  _`\ /\ \/\ \/\  _`\  /\  __`\/\__  _\  
